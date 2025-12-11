@@ -1,4 +1,4 @@
-from operation import Operation
+from calculator.operation import Operation
 
 class Divide(Operation):
     def __init__(self, a, b):
