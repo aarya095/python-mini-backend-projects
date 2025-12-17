@@ -1,4 +1,7 @@
+# Modular-Calculator 
 /txt.py
 __pycache__/
 *.pyc
 modular-calculator/txt.py
+modular-calculator/.pytest_cache
+modular-calculator/.venv
