@@ -1,5 +1,3 @@
-
-
 def get_and_validate_user_input():
     """Gets and Validates the input for numbers"""
     
