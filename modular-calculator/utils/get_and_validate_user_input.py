@@ -3,8 +3,8 @@ def get_and_validate_user_input():
     
     while True:
         try:
-            num_1 = int(input("Enter first number: "))
-            num_2 = int(input("Enter second number: "))
+            num_1 = float(input("Enter first number: "))
+            num_2 = float(input("Enter second number: "))
             break
         except ValueError:
             print("Invalid Input! Please provide an integer.")

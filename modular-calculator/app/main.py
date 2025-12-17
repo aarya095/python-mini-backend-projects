@@ -14,7 +14,7 @@ def main():
 
         print("\n1. Addition \n2. Subtraction")
         print("3. Multiply \n4. Divide")
-        print("Enter 0 to exit | Enter 6 to export data | Enter 7 for help.\n")
+        print("Enter 0 to exit.\n")
 
         operation_input = get_and_validate.get_and_validate_input_index()
 
