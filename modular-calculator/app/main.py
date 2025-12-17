@@ -1,3 +1,7 @@
+# Third Party Modules
+from colorama import Fore, Style
+
+# Local Modules
 from calculator.add import Add
 from calculator.subtract import Subtract
 from calculator.multiply import Multiply
@@ -9,10 +13,14 @@ def main():
     """Main function"""
 
     engine = CalculatorEngine()
+    print(Fore.LIGHTGREEN_EX)
+    print("░█▀▀░█▀█░█░░░█▀▀░█░█░█░░░█▀█░▀█▀░█▀█░█▀▄")
+    print("░█░░░█▀█░█░░░█░░░█░█░█░░░█▀█░░█░░█░█░█▀▄")
+    print("░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░░▀░░▀▀▀░▀░▀")
 
     while True:
-
-        print("\n1. Addition \n2. Subtraction")
+        print(Fore.LIGHTCYAN_EX, Style.BRIGHT + "\n------------------------\n")
+        print("1. Addition \n2. Subtraction")
         print("3. Multiply \n4. Divide")
         print("Enter 0 to exit.\n")
 
@@ -45,9 +53,11 @@ def main():
                 print("\n------------------------")
                 continue
             print(f"Result: {result}")
-        
-        print("\n------------------------")
 
+    print(Fore.LIGHTGREEN_EX)
+    print("╔═╗┌─┐┌─┐┬  ┬┌─┐┌─┐┌┬┐┬┌─┐┌┐┌  ╔═╗┬  ┌─┐┌─┐┌─┐┌┬┐")
+    print("╠═╣├─┘├─┘│  ││  ├─┤ │ ││ ││││  ║  │  │ │└─┐├┤  ││")
+    print("╩ ╩┴  ┴  ┴─┘┴└─┘┴ ┴ ┴ ┴└─┘┘└┘  ╚═╝┴─┘└─┘└─┘└─┘─┴┘")
     print("\n------------------------")
 
 if __name__ == '__main__':
