@@ -35,5 +35,8 @@ def multiply(num_1, num_2):
 
 @app.route('/div/<int:num_1>/<int:num_2>')
 def divide(num_1, num_2):
-    result = engine.execute_operation(Divide(num_1, num_2))
-    return str(result)
+    if num_2 == 0:
+        return "Error! You can't divide a number by zero."
+    else:
+        result = engine.execute_operation(Divide(num_1, num_2))
+        return str(result)
