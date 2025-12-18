@@ -13,10 +13,6 @@ def main():
     """Main function"""
 
     engine = CalculatorEngine()
-    print(Fore.LIGHTGREEN_EX)
-    print("░█▀▀░█▀█░█░░░█▀▀░█░█░█░░░█▀█░▀█▀░█▀█░█▀▄")
-    print("░█░░░█▀█░█░░░█░░░█░█░█░░░█▀█░░█░░█░█░█▀▄")
-    print("░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀░▀░░▀░░▀▀▀░▀░▀")
 
     while True:
         print(Fore.LIGHTCYAN_EX, Style.BRIGHT + "\n------------------------\n")
