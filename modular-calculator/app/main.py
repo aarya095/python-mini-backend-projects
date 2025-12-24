@@ -1,6 +1,5 @@
 # Third Party Modules
-from flask import Flask
-
+from flask import Flask, url_for
 
 # Local Modules
 from calculator.add import Add
@@ -14,7 +13,7 @@ from utils import get_and_validate_user_input as get_and_validate
 app = Flask(__name__)
 engine = CalculatorEngine()
 
-@app.route('/home')
+@app.route('/home/')
 def index():
     return "Hello World!"
 
