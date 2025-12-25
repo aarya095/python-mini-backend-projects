@@ -13,7 +13,7 @@ from utils import get_and_validate_user_input as get_and_validate
 app = Flask(__name__)
 engine = CalculatorEngine()
 
-@app.route('/home/')
+@app.route('/')
 def index():
     return "Hello World!"
 
